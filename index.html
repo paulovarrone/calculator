@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" name="Calculator">
+        <div class="calculadora">
+        
+            <input type="text" name="tela" id="tela">
+
+            <input class="tela res pro" name="reset" value="C" onclick="location.reload()">
+                        
+            <input class="bot bot1" type="button" value="1" name="btn1" onclick="displaybot(btn1.value)">
+
+            <input class="bot bot2" type="button" value="2" name="btn2" onclick="displaybot(btn2.value)">
+
+            <input class="bot bot3" type="button" value="3" name="btn3" onclick="displaybot(btn3.value)">
+
+            <input class="bot bot4" type="button" value="4" name="btn4" onclick="displaybot(btn4.value)">
+
+            <input class="bot bot5" type="button" value="5" name="btn5" onclick="displaybot(btn5.value)">
+            
+            <input class="bot bot6" type="button" value="6" name="btn6" onclick="displaybot(btn6.value)">
+
+            <input class="bot bot7" type="button" value="7" name="btn7" onclick="displaybot(btn7.value)">
+
+            <input class="bot bot8" type="button" value="8" name="btn8" onclick="displaybot(btn8.value)">
+
+            <input class="bot bot9" type="button" value="9" name="btn9" onclick="displaybot(btn9.value)">
+
+            <input class="bot bot0" type="button" value="0" name="btn0" onclick="displaybot(btn0.value)">
+
+            
+            
+            <input class="bot igual pro" type="button" value="=" name="btig" onclick="tela.value=eval(tela.value)">
+
+            <input class="bot ponto pro" type="button" value="." name="btpo" onclick="displaybot(btpo.value)">
+
+            <input class="bot mais pro" type="button" value="+" name="btpl" onclick="displaybot(btpl.value)">
+
+            <input class="bot menos pro" type="button" value="-" name="btle" onclick="displaybot(btle.value)">
+
+            <input class="bot mult pro" type="button" value="*" name="btmu" onclick="displaybot(btmu.value)">
+
+            <input class="bot divi pro" type="button" value="/" name="btdi" onclick="displaybot(btdi.value)">
+            
+           
+            
+
+        </div>
+
+    </form>
+</body>
+<script src="./script.js"></script>
+
+</html>

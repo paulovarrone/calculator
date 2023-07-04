@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: black;
+}
+
+.calculadora {
+    display: grid;
+    
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+
+    grid-template-areas:  
+    'tela tela res divi' 
+    'bot7 bot8 bot9 mult' 
+    'bot4 bot5 bot6 menos' 
+    'bot1 bot2 bot3 mais' 
+    'bot0 ponto igual igual' ;
+
+    gap: 10px;
+
+    margin-top: 100px; 
+    width: 100vw;
+
+    place-content: center;
+    
+}
+
+@media(max-width: 500px) {
+    .calculadora {
+        display: grid;
+        
+        grid-template-columns: 55px 55px 55px 55px;
+        grid-template-rows:  100px 101px 100px 100px 100px 100px;
+    
+        grid-template-areas:  
+        'tela tela tela tela' 
+        'res res res divi'
+        'bot7 bot8 bot9 mult' 
+        'bot4 bot5 bot6 menos' 
+        'bot1 bot2 bot3 mais' 
+        'bot0 ponto igual igual' ;
+    
+        gap: 10px;
+    
+         
+        width: 100vw;
+    
+        place-content: center;
+        
+    }
+}
+
+#tela {
+    grid-area: tela;
+    font-size: 30px;
+}
+
+.res {
+    grid-area: res;
+}
+
+.divi {
+    grid-area: divi;
+}
+
+.bot7 {
+    grid-area: bot7;
+}
+
+.bot8 {
+    grid-area: bot8;
+}
+
+.bot9 {
+    grid-area: bot9;
+}
+
+.mult {
+    grid-area: mult;
+}
+
+.bot4 {
+    grid-area: bot4;
+}
+
+.bot5 {
+    grid-area: bot5;
+}
+
+.bot6 {
+    grid-area: bot6;
+}
+
+.menos {
+    grid-area: menos;
+}
+
+.bot1 {
+    grid-area: bot1;
+}
+.bot2 {
+    grid-area: bot2;
+}
+.bot3 {
+    grid-area: bot3;
+}
+.mais {
+    grid-area: mais;
+}
+
+.bot0 {
+    grid-area: bot0;
+}
+
+.ponto {
+    grid-area: ponto;
+}
+
+.igual {
+    grid-area: igual;
+}
+
+.bot {
+    background: cyan;  
+}
+
+.pro {
+    background: chocolate;  
+}
+
+.bot, .pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: none;
+    text-align: center;
+}
+
