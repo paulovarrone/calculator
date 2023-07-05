@@ -127,11 +127,21 @@ body {
 }
 
 .bot {
-    background: cyan;  
+    background: rgb(0, 221, 221);  
+    
+}
+
+.bot:hover {
+   /* background: rgb(101, 124, 58); */
+   background: cyan;    
 }
 
 .pro {
     background: chocolate;  
+}
+
+.pro:hover {
+    background: rgb(255, 128, 36);  
 }
 
 .bot, .pro {
